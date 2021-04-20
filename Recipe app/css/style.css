@@ -1,0 +1,107 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-image: url(../img/food2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding: 17% 0%;
+}
+
+h1{
+    text-align: center;
+    color: rgb(73, 138, 73);
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+#formSearch{
+    text-align: center;
+}
+
+#searchInput{
+    padding: 15px 15px;
+    padding-left: 50px;
+    border-radius: 20px;
+    border: solid 1px whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    width: 60%;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 40px;
+    outline: none;
+    border: 2px solid transparent;
+    /* animation 
+    transition: 0.4s ease-in-out;
+    */
+}
+
+#searchInput:focus{
+    border: 2px solid rgb(100, 146, 100);
+    /* animation
+    width: 60%;
+    */
+}
+
+#button{
+    padding: 10px 36px;
+    border-radius: 15px;
+    border: solid 2px transparent;
+    background-color: rgb(100, 146, 100);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#button:hover{
+    background-color: transparent;
+    color: rgb(100, 146, 100);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 2px;
+}
+
+#search{
+    position: relative;
+}
+
+.fa-search{
+    position: absolute;
+    top: 58px;
+    left: 19%;
+    color: gray;
+}
+
+#recipesList{
+    background-color: whitesmoke;
+    height: 500px;
+    margin: 50px;
+}
+
+h2{
+    color: rgb(73, 138, 73);
+    font-weight: 400;
+}
+
+.recettes{
+    display: flex;
+}
+
+.recettes div{
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    border: solid 1px whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 500;
+}
