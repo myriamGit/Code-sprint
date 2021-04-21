@@ -1,6 +1,7 @@
 const formCalories = document.getElementById('formCalories')
 formCalories.addEventListener('submit',function(event) {
     event.preventDefault();
+    //card.innerHTML
     let searchValue = searchInput.Value;
 
     const API_KEY = "f533720512f75adc060d227d84b86489";
@@ -22,18 +23,19 @@ formCalories.addEventListener('submit',function(event) {
             time.innerText = recipe.totalTime + "min";
             let image = document.createElement("img");
             image.src = recipe.image;
-            //let calories = document.createElement("p");
-            //calories.innerText = recipe.calories;
-    
+            let calories = document.createElement("p");
+            calories.innerText = recipe.calories + "Kcal";
+            
             let card = document.createElement("div");
             card.className = "card";
 
             card.append(title);
+            card.append(calories);
             card.append(time);
             card.append(image);
-            card.append(calories);
 
-            caloriesList.append(card)
+
+            recipesList.append(card)
         });
     })
     .catch((e) => console.log(e));

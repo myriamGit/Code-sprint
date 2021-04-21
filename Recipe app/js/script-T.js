@@ -1,19 +1,14 @@
-const formSearch = document.getElementById('formSearch')
-const searchInput = document.getElementById('searchInput')
-formSearch.addEventListener('submit',function(event) {
+const formTime = document.getElementById('formTime')
+formTime.addEventListener('submit',function(event) {
     event.preventDefault();
+    //card.innerHTML
     let searchValue = searchInput.Value;
-
-        //card.innerHTML
-    //card.innerHTML = "<pre>" +
-    //card.innerHTML.replace(/</g,"&lt;") +
-     //  "</pre>";
 
     const API_KEY = "f533720512f75adc060d227d84b86489";
     const API_ID = "826799ae";
     const API_URL = "https://api.edamam.com"
 
-    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=chiken`)
+    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=time=1%2B`)
 
     .then((response) => response.json())
     .then((data) => {
@@ -35,6 +30,7 @@ formSearch.addEventListener('submit',function(event) {
             card.append(title);
             card.append(time);
             card.append(image);
+
 
             recipesList.append(card)
         });
