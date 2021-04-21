@@ -1,6 +1,5 @@
-const formSearch = document.getElementById('formSearch')
-const searchInput = document.getElementById('searchInput')
-formSearch.addEventListener('submit',function(event) {
+const formCalories = document.getElementById('formCalories')
+formCalories.addEventListener('submit',function(event) {
     event.preventDefault();
     let searchValue = searchInput.Value;
 
@@ -8,7 +7,7 @@ formSearch.addEventListener('submit',function(event) {
     const API_ID = "826799ae";
     const API_URL = "https://api.edamam.com"
 
-    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=chiken`)
+    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=calories=100-300`)
 
     .then((response) => response.json())
     .then((data) => {
@@ -23,6 +22,8 @@ formSearch.addEventListener('submit',function(event) {
             time.innerText = recipe.totalTime + "min";
             let image = document.createElement("img");
             image.src = recipe.image;
+            //let calories = document.createElement("p");
+            //calories.innerText = recipe.calories;
     
             let card = document.createElement("div");
             card.className = "card";
@@ -30,8 +31,9 @@ formSearch.addEventListener('submit',function(event) {
             card.append(title);
             card.append(time);
             card.append(image);
+            card.append(calories);
 
-            recipesList.append(card)
+            caloriesList.append(card)
         });
     })
     .catch((e) => console.log(e));

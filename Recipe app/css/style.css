@@ -57,7 +57,25 @@ h1{
     font-weight: 600;
 }
 
+#button-deux{
+    padding: 10px 36px;
+    border-radius: 15px;
+    border: solid 2px transparent;
+    background-color: rgb(100, 146, 100);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
 #button:hover{
+    background-color: transparent;
+    color: rgb(100, 146, 100);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: solid 2px;
+}
+
+#button-deux:hover{
     background-color: transparent;
     color: rgb(100, 146, 100);
     cursor: pointer;
@@ -76,12 +94,6 @@ h1{
     color: gray;
 }
 
-#recipesList{
-    background-color: whitesmoke;
-    height: 500px;
-    margin: 50px;
-}
-
 h2{
     color: rgb(73, 138, 73);
     font-weight: 400;
@@ -90,6 +102,14 @@ h2{
 #recipesList{
     display: flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
+    margin: 50px;
+}
+
+#caloriesList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
 }
 
 .card{
