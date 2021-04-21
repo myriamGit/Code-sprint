@@ -95,19 +95,22 @@ h2{
 .card{
     width: 30%;
     height: 300px;
-    margin: 10px;
-    border-radius: 20px;
+    margin: 18px;
+    border-radius: 10px;
     border: solid 1px transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.329) 0px 18px 18px;
     font-weight: 400;
     background-color: #799681a6;
+    overflow: hidden;
+    color: whitesmoke;
+    text-align: center;
 }
 
 img{
-    width: 50%;
+    width: 100%;
 }
 
 h3{
-    font-weight: 500;
+    font-weight: 700;
+    padding: 5px 20px;
 }
