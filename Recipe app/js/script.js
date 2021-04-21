@@ -20,7 +20,7 @@ formSearch.addEventListener('submit',function(event) {
             let title = document.createElement("h3");
             title.innerText = recipe.label;
             let time = document.createElement("p");
-            time.innerText = recipe.totalTime;
+            time.innerText = recipe.totalTime + "min";
             let image = document.createElement("img");
             image.src = recipe.image;
     
