@@ -15,55 +15,32 @@
       
 
     <div class="container">
-      <h1>Trouvez votre repas du jour</h1>
+      <h1>Find Delicious Recipes</h1>
       
       <form id="formSearch">
           <div id="search">
               <i class="fas fa-search"></i>
-              <input type="text" id="searchInput" placeholder="Chercher un ingrédient...">
+              <input type="text" id="searchInput" placeholder="Search by ingredients...">
           </div>
+
           <br>
-          <input type="submit" value="search" id="button">
-            <!-- <a href="#recipesList"></a> -->
+          
+          <input type="submit" value="Search" id="button" onclick=window.location.href='#recipesList'>
       </form>
-    </div>
 
-
-  <div id="recipesList">
-
-    <!-- 
-      <h2>Résultats</h2>
-
-      <div class="card">
-
-        <div>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
-
-        <div>
-            <h3></h3>
-            <img src="" alt="">
-            <p></p>
-        </div>
+      <form id="formCalories">
+        <input type="submit" value="Calories" id="button-deux" onclick=window.location.href='#caloriesList'>
+      </form>
 
     </div>
-    -->
-
-  </div>
 
 
+  <div id="recipesList"></div>
+  <div id="caloriesList"></div>
 
-    <script src="js/script.js"></script>
 
-    <script src="js/script.2.js"></script>
-    
+  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
+
   </body>
 </html>
