@@ -17,7 +17,7 @@ formSearch.addEventListener('submit',function(event) {
         recipes.map((recipeData) => {
             const recipe = recipeData.recipe;
             console.log(recipe);
-            let title = document.createElement("h1");
+            let title = document.createElement("h3");
             title.innerText = recipe.label;
             let time = document.createElement("p");
             time.innerText = recipe.totalTime;
