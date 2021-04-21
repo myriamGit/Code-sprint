@@ -87,19 +87,25 @@ h2{
     font-weight: 400;
 }
 
-.recettes{
+#recipesList{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.recettes div{
+.card{
     width: 30%;
     height: 300px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
-    border: solid 1px whitesmoke;
+    border: solid 1px transparent;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     text-align: center;
     font-weight: 400;
+    background-color: #799681a6;
+}
+
+img{
+    width: 50%;
 }
 
 h3{
