@@ -141,3 +141,11 @@ h3{
 #formCT{
     margin: 30px;
 }
+
+#openweathermap-widget-16{
+    position: relative;
+    top: -150px;
+    left: 1060px;
+    width: 15%;
+    height: 20%;
+}

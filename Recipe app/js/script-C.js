@@ -26,14 +26,7 @@ formCalories.addEventListener('submit',function(event) {
             let calories = document.createElement("p");
             calories.innerText= parseInt(recipe.calories) + "Kcal";
             
-            //console.log(parseInt(recipe.calories));
-            
-            
-
-            //const recipes = 1464.9796666650961;
-            //console.log (recipes);
-            //console.log(Math.floor(recipes));
-            
+            console.log(parseInt(recipe.calories));
 
             let card = document.createElement("div");
             card.className = "card";
