@@ -24,9 +24,9 @@ formCalories.addEventListener('submit',function(event) {
             let image = document.createElement("img");
             image.src = recipe.image;
             let calories = document.createElement("p");
-            calories.innerText= recipe.calories + "Kcal";
+            calories.innerText= parseInt(recipe.calories) + "Kcal";
             
-            console.log(parseInt(recipe.calories));
+            //console.log(parseInt(recipe.calories));
             
             
 
