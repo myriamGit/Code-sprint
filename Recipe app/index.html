@@ -16,7 +16,12 @@
 
     <div class="container">
       <div id="openweathermap-widget-16"></div>
-      <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 16,cityid: '3031582',appid: '92ae9a690436b29b4babd5f9e0f1fede',units: 'metric',containerid: 'openweathermap-widget-16',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+      <script>
+        window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 16,cityid:'3031582',appid: '92ae9a690436b29b4babd5f9e0f1fede',units: 'metric',containerid: 'openweathermap-widget-16',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();
+        navigator.geolocation.getCurrentPosition(function(position) {
+        faireQqc(position.coords.latitude, position.coords.longitude);
+          });
+      </script>
       
       <h1>Find Delicious Recipes</h1>
 
@@ -41,7 +46,7 @@
         </form>
 
         <form id="formCT">
-          <input type="submit" value="Indian food" id="button-deux" onclick=window.location.href='#recipesList'>
+          <input type="submit" value="Italian food" id="button-deux" onclick=window.location.href='#recipesList'>
         </form>
 
         <form id="formD">

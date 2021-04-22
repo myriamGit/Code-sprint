@@ -7,7 +7,7 @@ formCT.addEventListener('submit',function(event) {
     const API_ID = "826799ae";
     const API_URL = "https://api.edamam.com"
 
-    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=&cuisineType=Indian`)
+    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=&cuisineType=Italian`)
 
     .then((response) => response.json())
     .then((data) => {
