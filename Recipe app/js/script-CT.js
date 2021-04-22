@@ -15,6 +15,7 @@ formCT.addEventListener('submit',function(event) {
 
         console.log(data);
         const recipes = data.hits;
+        recipesList.innerHTML = ""
         recipes.map((recipeData) => {
             const recipe = recipeData.recipe;
             console.log(recipe);
