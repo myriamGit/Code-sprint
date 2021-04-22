@@ -4,16 +4,11 @@ formSearch.addEventListener('submit',function(event) {
     event.preventDefault();
     let searchValue = searchInput.Value;
 
-        //card.innerHTML
-    //card.innerHTML = "<pre>" +
-    //card.innerHTML.replace(/</g,"&lt;") +
-     //  "</pre>";
-
     const API_KEY = "f533720512f75adc060d227d84b86489";
     const API_ID = "826799ae";
     const API_URL = "https://api.edamam.com"
 
-    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=chiken`)
+    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=${searchValue}`)
 
     .then((response) => response.json())
     .then((data) => {
