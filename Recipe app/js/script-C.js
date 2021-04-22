@@ -13,6 +13,7 @@ formCalories.addEventListener('submit',function(event) {
     .then((data) => {
         console.log(data);
         const recipes = data.hits;
+        recipesList.innerHTML = ""
         recipes.map((recipeData) => {
             const recipe = recipeData.recipe;
             console.log(recipe);

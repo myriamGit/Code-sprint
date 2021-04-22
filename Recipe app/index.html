@@ -16,11 +16,13 @@
 
     <div class="container">
       <h1>Find Delicious Recipes</h1>
+
+      <id class="meteo"></id>
       
       <form id="formSearch">
           <div id="search">
               <i class="fas fa-search"></i>
-              <input type="text" id="searchInput" placeholder="Search by ingredients...">
+              <input type="text" id="searchInput" placeholder="Search by ingredients..." onclick=window.location.href='#recipesList'>
           </div>
 
           <br>
@@ -38,11 +40,22 @@
         </form>
 
         <form id="formCT">
-          <input type="submit" value="Cuisine Type" id="button-deux" onclick=window.location.href='#recipesList'>
+          <input type="submit" value="Indian food" id="button-deux" onclick=window.location.href='#recipesList'>
         </form>
+
+        <!--<ul id="formCT">
+          <li><a href="#">Cuisine Type</a>
+            <ul>
+              <li><a href="#">Italian</a></li>
+              <li><a href="#">Indian</a></li>
+            </ul>
+          </li>
+        </ul> -->
 
       </div>
 
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_9svjqjw8.json"  background="transparent" speed="1"  style="width: 50px; height: 50px;margin-left:50%;margin-top: 40px;"  loop  autoplay></lottie-player>
     </div>
 
 
@@ -53,6 +66,7 @@
   <script src="js/script-C.js"></script>
   <script src="js/script-T.js"></script>
   <script src="js/script-CT.js"></script>
+  <script src="js/script-meteo.js"></script>
 
   </body>
 </html>

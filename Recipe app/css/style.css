@@ -29,18 +29,18 @@ h1{
     border-radius: 20px;
     border: solid 1px whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    width: 30%;
+    width: 60%;
     font-size: 1em;
     font-weight: 200;
     margin: 40px;
     outline: none;
     border: 2px solid transparent;
-    transition: 0.4s ease-in-out;
+    /*transition: 0.4s ease-in-out;*/
 }
 
 #searchInput:focus{
     border: 2px solid rgb(100, 146, 100);
-    width: 60%;
+    /*width: 60%;*/
 }
 
 #button{
@@ -99,13 +99,12 @@ h2{
     display: flex;
     flex-wrap: wrap;
     background-color: whitesmoke;
-    margin: 50px;
 }
 
 .card{
     width: 30%;
     height: 400px;
-    margin: 18px;
+    margin: 20px;
     border-radius: 10px;
     border: solid 1px transparent;
     box-shadow: rgba(0, 0, 0, 0.329) 0px 18px 18px;
