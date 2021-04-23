@@ -10,20 +10,20 @@ formCocktail.addEventListener('submit',function(event) {
         console.log(data);
 
         const formCocktailHTML = document.getElementById("formCocktail");
-        formCocktailHTML.innerHTML = ""
-        Cocktail.map((drinksData) => {
-          const cocktail = cocktailData.drinks;
-          console.log(cocktail);
-          let title = Array.createElement("strDrink");
-          title.innerText = cocktail.label;
+        recipesListHTML.innerHTML = ""
+        recipes.map((recipeData) => {
+          const recipe = recipeData.drinks;
+          console.log(recipe);
+          let title = document.createElement("strDrink");
+          title.innerText = recipe.label;
           let image = document.createElement("strDrinkThumb");
-          image.src = cocktail.image;
-
+          image.src = recipe.image;
+          let card = document.createElement("div");
           card.className = "card";
 
           card.append(title);
           card.append(image);
-          cocktail.append(card)
+          recipesList.append(card)
         
         });
 })
