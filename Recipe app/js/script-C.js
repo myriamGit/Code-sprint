@@ -35,5 +35,6 @@ formCalories.addEventListener('submit',function(event) {
             recipesList.append(card)
         });
     })
+    
     .catch((e) => console.log(e));
 });
