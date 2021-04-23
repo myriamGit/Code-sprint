@@ -14,40 +14,60 @@
   <body>
       
 
-    <div class="container">
-      <div id="openweathermap-widget-16"></div>
-      <script> window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];window.myWidgetParam.push({id: 16,cityid: '3031582',appid: '92ae9a690436b29b4babd5f9e0f1fede',units: 'metric',containerid: 'openweathermap-widget-16',  }); (function() {var script = document.createElement('script'); script.async = true;script.charset = "utf-8";script.src = "http://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })(); </script>
+  <div class="container">
+      <!-- Widget meteo -->
+        <div id="openweathermap-widget-16"></div>
+        <script>
+          window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 16,cityid:'2988507',appid: '92ae9a690436b29b4babd5f9e0f1fede',units: 'metric',containerid: 'openweathermap-widget-16',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();
+          navigator.geolocation.getCurrentPosition(function(position) {
+          //faireQqc(position.coords.latitude, position.coords.longitude);
+          console.log(position)
+            });
+        </script>
+
+      <!-- Script meteo -->
+      <!--<div id="meteo"> </div>-->
+
       <h1>Find Delicious Recipes</h1>
 
+      <!-- Search -->
       <form id="formSearch">
           <div id="search">
               <i class="fas fa-search"></i>
-              <input type="text" id="searchInput" placeholder="Search by ingredients..." onclick=window.location.href='#recipesList'>
+              <input type="text" id="searchInput" placeholder="Search by ingredients...">
           </div>
 
           <br>
-          
           <input type="submit" value="Search" id="button" onclick=window.location.href='#recipesList'>
       </form>
 
       <div class="buttons">
+
+        <!-- Healthy -->
         <form id="formCalories">
           <input type="submit" value="Healthy" id="button-deux" onclick=window.location.href='#recipesList'>
         </form>
 
+        <!-- Fast -->
         <form id="formTime">
           <input type="submit" value="Fast" id="button-deux" onclick=window.location.href='#recipesList'>
         </form>
 
+        <!-- Italian food -->
         <form id="formCT">
-          <input type="submit" value="Indian food" id="button-deux" onclick=window.location.href='#recipesList'>
+          <input type="submit" value="Italian food" id="button-deux" onclick=window.location.href='#recipesList'>
+        </form>
+
+        <!-- Desserts -->
+        <form id="formD">
+          <input type="submit" value="Desserts" id="button-deux" onclick=window.location.href='#recipesList'>
         </form>
 
        <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_9svjqjw8.json"  background="transparent" speed="1"  style="width: 50px; height: 50px;margin-left:50%;margin-top: 40px;"  loop  autoplay></lottie-player>-->
-    </div>
+  </div>
 
-
+  <!-- Résultats -->
   <div id="recipesList"></div>
 
 
@@ -55,7 +75,7 @@
   <script src="js/script-C.js"></script>
   <script src="js/script-T.js"></script>
   <script src="js/script-CT.js"></script>
-  <script src="js/script-meteo.js"></script>
-
+  <script src="js/script-D.js"></script>
+  <!--<script src="js/script-meteo.js"></script>-->
   </body>
 </html>

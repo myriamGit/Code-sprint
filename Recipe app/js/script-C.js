@@ -19,20 +19,16 @@ formCalories.addEventListener('submit',function(event) {
             console.log(recipe);
             let title = document.createElement("h3");
             title.innerText = recipe.label;
-            let time = document.createElement("p");
-            time.innerText = recipe.totalTime + "min";
             let image = document.createElement("img");
             image.src = recipe.image;
             let calories = document.createElement("p");
-            calories.innerText= parseInt(recipe.calories) + "Kcal";
-            
+            calories.innerText= parseInt(recipe.calories) + "Kcal"; 
             console.log(parseInt(recipe.calories));
             let card = document.createElement("div");
             card.className = "card";
 
             card.append(title);
             card.append(calories);
-            card.append(time);
             card.append(image);
 
 

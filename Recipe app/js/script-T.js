@@ -1,7 +1,6 @@
 const formTime = document.getElementById('formTime')
 formTime.addEventListener('submit',function(event) {
     event.preventDefault();
-    //card.innerHTML
     let searchValue = searchInput.Value;
 
     const API_KEY = "f533720512f75adc060d227d84b86489";

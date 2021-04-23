@@ -8,7 +8,7 @@ formSearch.addEventListener('submit',function(event) {
     const API_ID = "826799ae";
     const API_URL = "https://api.edamam.com"
 
-    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=chiken`)
+    fetch(`https://api.edamam.com/search?app_id=${API_ID}&app_key=${API_KEY}&q=${searchValue}`)
 
     .then((response) => response.json())
     .then((data) => {
